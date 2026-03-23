@@ -3,20 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A-Frame сцена — Виправлений Тор</title>
+  <title>A-Frame сцена — Чиста підставка</title>
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 </head>
 <body style="margin: 0;">
 
   <a-scene background="color: #8c8c8c">
-    <a-assets>
-      <img
-        id="floorTexture"
-        src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/illustration/758px-Canestra_di_frutta_(Caravaggio).jpg"
-        crossorigin="anonymous"
-      >
-    </a-assets>
-
     <a-sky color="#8c8c8c"></a-sky>
 
     <a-light type="ambient" color="#bbbbbb" intensity="1"></a-light>
@@ -25,7 +17,6 @@
     <a-entity id="sceneGroup" position="0 0 0" rotation="0 0 0" scale="1 1 1">
 
       <a-plane
-        src="#floorTexture"
         width="7"
         height="7"
         rotation="-55 0 0"
