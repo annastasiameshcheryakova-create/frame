@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A-Frame сцена — Исправленная версия</title>
+  <title>A-Frame сцена: Исправленная толщина</title>
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 </head>
 <body style="margin: 0;">
@@ -51,7 +51,7 @@
       <a-cylinder
         color="yellow"
         height="2"
-        radius="0.3"
+        radius="0.05"
         position="-2 -1 -5">
       </a-cylinder>
 
@@ -66,7 +66,7 @@
         position="-2 1 -5"
         color="green"
         radius="1.2"
-        radius-tubular="0.2"
+        radius-tubular="0.25"
         rotation="90 0 0"
         animation="property: components.material.material.color; type: color; from: green; to: #3cff00; dir: alternate; loop: true; dur: 6000"
         animation__spin="property: rotation; to: 90 360 0; loop: true; dur: 12000; easing: linear">
@@ -75,10 +75,10 @@
       <a-torus-knot
         color="orange"
         radius="1.2"
-        radius-tubular="0.12"
+        radius-tubular="0.3" 
         p="2"
         q="3"
-        position="-3 1 -5"
+        position="-2.5 1 -5"
         rotation="0 0 0"
         animation="property: rotation; to: 0 360 360; loop: true; dur: 10000; easing: linear"
         animation__color="property: components.material.material.color; type: color; from: orange; to: gold; dir: alternate; loop: true; dur: 5000">
